@@ -60,6 +60,15 @@ class LoginP extends Component {
                                 <div className="loginForgotPass">Forgot password?</div>
                             </div>
                         </div>
+                        <div>
+                            
+                        </div>
+                        <div className = "loginPageSignUpOptions">
+                            <div className="loginPageSignUpPrompt">
+                                Don't have an account?
+                            </div>
+                            <div className="loginPageSignUpText">Sign up</div>
+                        </div>
                     </div>
                     </div>
                 </Grid>
