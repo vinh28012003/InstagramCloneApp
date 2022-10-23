@@ -1,11 +1,13 @@
 import './App.css';
-import LoginP from'./components/LoginPage/LoginP';
+import HomePage from './components/HomePage/HomePage.js'
+//import LoginP from'./components/LoginPage/LoginP';
+
 function App() {
   return (
-    <>
-    <LoginP></LoginP>
-
-    </>
+    <div className="App">
+      {/* <LoginP></LoginP> */}
+      <HomePage></HomePage>
+    </div>
   );
 }
 

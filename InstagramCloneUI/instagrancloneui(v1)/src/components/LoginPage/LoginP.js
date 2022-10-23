@@ -1,15 +1,29 @@
 import React, { Component} from 'react';
 import './LoginP.css';
 import Grid from '@mui/material/Grid'; // Grid version 1
-import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+
 import inst_image from '../../images/9364675fb26a.svg';
 import insta_logo from '../../images/logoinsta.png';
-import fb from '../../images/fb.png'
+import fb from '../../images/fb.png';
+import appstore from '../../images/app.png';
+import playstore from '../../images/play.png';
+import SignIn from './SignInComponents/SignIn.js';
+import SignUp from './SignUpComponents/SignUp.js';
 class LoginP extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            isLogin :true
+        }
     }
-    state = {  }
+    changeLogin=() => {
+        if (this.state.isLogin) {
+            this.setState({isLogin: false});
+
+        } else {
+            this.setState({isLogin: true});
+        }
+    }
     render() { 
         return ( 
             <div>
@@ -25,18 +39,12 @@ class LoginP extends Component {
                     <div>
                         <div className="loginpage_rightcomponent">
                             <img  className="loginpageLogo"  src={insta_logo}></img> 
-                            {/*Inputs texts*/}
+                            
                             <div className="loginPageSignIn">
-                                <input 
-                                className="loginPageText" 
-                                type="text"
-                                placeholder="Phone number, username, or email"></input>
-                                <input 
-                                className="loginPageText" 
-                                type="password"
-                                placeholder="Password"></input>
-                                {/*Inputs Button*/}
-                                <button className="loginButton" >Log In</button>
+                                {
+                                   this.state.isLogin ? <SignIn/> : <SignUp/>
+                                }
+                            
                             </div>
                             <div className="loginOrDiv">
                                 <div className="loginOrLeftStick">
@@ -63,11 +71,33 @@ class LoginP extends Component {
                         <div>
                             
                         </div>
-                        <div className = "loginPageSignUpOptions">
-                            <div className="loginPageSignUpPrompt">
-                                Don't have an account?
+                        <div >
+                            {
+                                this.state.isLogin ? 
+                                <div className = "loginPageSignUpOptions"> 
+                                    <div className="loginPageSignUpPrompt">
+                                    Don't have an account?
+                                    </div>
+                                    <div className="loginPageSignUpText" onClick={this.changeLogin}>
+                                    Sign up
+                                </div> </div>: <div className = "loginPageSignUpOptions"> 
+                                    <div className="loginPageSignUpPrompt">
+                                     Already have an account?
+                                    </div>
+                                    <div className="loginPageSignUpText" onClick={this.changeLogin}>
+                                    Log in
+                                </div> </div>
+                            }
+                            
+                        </div>
+                        <div className="loginPageDownloadSection">
+                            <div>
+                                Get the app
                             </div>
-                            <div className="loginPageSignUpText">Sign up</div>
+                            <div className="loginPageOption">
+                                <img className="loginPagedwimg" src={appstore} width="136px"/>
+                                <img  className="loginPagedwimg" src={playstore} width="136px"/>
+                            </div>
                         </div>
                     </div>
                     </div>
