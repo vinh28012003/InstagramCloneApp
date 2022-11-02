@@ -7,7 +7,7 @@ class MainCont extends Component {
     }
     state = {  }
     render() { 
-        return ( <div>MainCOnt</div> );
+        return ( <div>MainCont</div> );
     }
 }
  
