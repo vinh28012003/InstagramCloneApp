@@ -1,28 +1,31 @@
 .statContainer {
     height: 120px;
-    width: 615px;
-    background-color: white;
+    width: 468px;
+    background-color: #ffffff;
     border: 1px solid #dbdbdb;
     margin-top: 25px;
+    margin-left:95px;
     display:flex;
     overflow-x: scroll;
+    border-radius: 0.2cm;
 }
 .statContainer::-webkit-scrollbar {
     display: none;
 }
 .statusBarStat{
-    min-height: 55px;
-    min-width: 55px;
-
+    min-height: 54px;
+    min-width: 54px;
     border: 3px solid #DF3968;
 }
 
 .status {
     margin: 25px 10px;
-    
+
 }
 .statusBarText {
-    font-size: 12px;
-    max-width: 50px;
+    font-size: 10px;
+    max-width: 55px;
     overflow-x:hidden;
+    text-align: center;
+    
 }

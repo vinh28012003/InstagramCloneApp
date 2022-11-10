@@ -27,7 +27,7 @@ class NavBar extends Component {
                     <Grid item xs = {3}>
                         <input className = "navSearchBar" text = "text" placeholder = "Search"/>
                     </Grid>
-                    <Grid item xs={3} style={{"display":"flex"}}>
+                    <Grid item xs={3} style={{"display":"flex", "marginLeft":"20px", "marginTop":"5px"}}>
                         <img className="navBImage" src = {home} width="25px"/>
                         <img className="navBImage" src = {message} width="25px"/>
                         <img className="navBImage" src = {find} width="25px"/>

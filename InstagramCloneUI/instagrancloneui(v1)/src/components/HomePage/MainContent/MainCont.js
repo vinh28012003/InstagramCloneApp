@@ -13,15 +13,17 @@ class MainCont extends Component {
         return ( 
         <div>
             <Grid container>
-                <Grid item xs ={2}>asdasd</Grid>
+                <Grid item xs ={2}></Grid>
                 <Grid item xs ={6}>
                     <div>
                         <StatusBar></StatusBar>
                         <PostPanel></PostPanel>
+                        <PostPanel></PostPanel>
+                        <PostPanel></PostPanel>
                     </div>
                 </Grid>
-                <Grid item xs ={2}>asda</Grid>
-                <Grid item xs ={2}>asdad</Grid>
+                <Grid item xs ={2}></Grid>
+                <Grid item xs ={2}></Grid>
             </Grid>
         </div> );
     }
