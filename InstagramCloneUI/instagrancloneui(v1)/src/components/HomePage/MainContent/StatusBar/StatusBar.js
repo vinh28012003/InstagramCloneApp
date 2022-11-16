@@ -12,7 +12,7 @@ class StatusBar extends Component {
     componentDidMount() {
         this.getData();
     }
-    getData=()=>{
+    getData=()=>{ //Calling backend for data from here
         let data = [
             {
                 "username" : "Vinh Quang Tran",

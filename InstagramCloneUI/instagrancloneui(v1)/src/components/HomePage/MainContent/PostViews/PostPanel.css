@@ -1,6 +1,6 @@
 .postContainer{
     width: 468px;
-    height: 888px;
+    /* height: 888px; */
     border: 1px solid #dbdbdb;
     background-color:white;
     margin-top: 20px;
@@ -21,4 +21,31 @@
 .postUserName{
     font-weight: bold;
     margin-top: 15px;
+}
+.postFeatCont{
+    margin-left: 10px;
+    text-align:left;
+}
+.postReaction{
+    
+    height:25px;
+    width: 25px;
+    margin: 5px;
+    
+    
+}
+.postComments{
+    margin: 10px;
+    margin-left: 15px;
+    font-size:small;
+}
+.postCommentBox{
+    height: 45px;
+    width: 456px;
+    border: 1px solid #dbdbdb;
+    font-size: 13px;
+    padding-left: 10px;
+    
+    margin-left:-1px;
+    margin-bottom:-1px;
 }
