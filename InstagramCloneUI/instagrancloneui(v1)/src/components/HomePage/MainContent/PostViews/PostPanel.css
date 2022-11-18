@@ -1,0 +1,52 @@
+.postContainer{
+    cursor: pointer;
+    width: 468px;
+    /* height: 888px; */
+    border: 1px solid #dbdbdb;
+    background-color:white;
+    margin-top: 16px;
+    margin-left:95px;
+    border-radius:1.5%;
+}
+
+.postHeader{
+    height:60px;
+    border-bottom: 1px solid #dbdbdb;
+    display:flex;
+}
+.postAva{
+    min-width: 30px;
+    min-height:30px;
+    margin: 10px;
+}
+.postUserName{
+    font-weight: bold;
+    margin-top: 15px;
+}
+.postFeatCont{
+    margin-left: 10px;
+    text-align:left;
+}
+.postReaction{
+    
+    height:25px;
+    width: 25px;
+    margin: 5px;
+    
+    
+}
+.postComments{
+    margin: 10px;
+    margin-left: 15px;
+    font-size:small;
+}
+.postCommentBox{
+    height: 45px;
+    width: 456px;
+    border: 1px solid #dbdbdb;
+    font-size: 13px;
+    padding-left: 10px;
+    
+    margin-left:-1px;
+    margin-bottom:-1px;
+}
