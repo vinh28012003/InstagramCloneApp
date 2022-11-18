@@ -1,9 +1,10 @@
 .postContainer{
+    cursor: pointer;
     width: 468px;
     /* height: 888px; */
     border: 1px solid #dbdbdb;
     background-color:white;
-    margin-top: 20px;
+    margin-top: 16px;
     margin-left:95px;
     border-radius:1.5%;
 }

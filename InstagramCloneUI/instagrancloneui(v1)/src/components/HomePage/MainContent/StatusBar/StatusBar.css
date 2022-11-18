@@ -1,9 +1,9 @@
 .statContainer {
-    height: 120px;
+    height: 115px;
     width: 468px;
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left:95px;
     display:flex;
     overflow-x: scroll;
@@ -19,13 +19,11 @@
 }
 
 .status {
-    margin: 25px 10px;
-
+    margin: 25px 15px;
+    margin-top: 20px;
 }
 .statusBarText {
-    font-size: 10px;
-    max-width: 55px;
+    font-size: 12px;
+    max-width: 60px;
     overflow-x:hidden;
-    text-align: center;
-    
 }

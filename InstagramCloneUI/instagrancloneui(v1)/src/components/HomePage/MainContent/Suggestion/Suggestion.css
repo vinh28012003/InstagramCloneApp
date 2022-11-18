@@ -1,0 +1,36 @@
+.sugContainer{
+    margin-top: 13px;
+    margin-left:-160px;
+}
+
+.sugTextLine{
+    cursor: pointer;
+    
+    font-size:14px;
+    font-weight:bold;
+    color:#a2a2a2;
+}
+.suggestions{
+    margin-top:15px;
+    display:flex;
+}
+
+.suggestionsAva{
+    max-width: 35px;
+    max-height:35px;
+}
+
+.sugFriendName{
+    font-weight: bold;
+    margin: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.signOut {
+    margin-left:88px;
+    margin-top:1px;
+    font-size:13px;
+    font-weight: bold;
+    color:#889bf8;
+    cursor: pointer;
+}
