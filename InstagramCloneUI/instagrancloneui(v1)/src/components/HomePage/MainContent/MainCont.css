@@ -1,14 +1,28 @@
 
 .mainCont{
     background-color:#fafafa;
+    
+    
 }
 
 .mainPageUploadIcon {
-
+    width: 30px;    
+    height: 30px;
 }
 .addLine{
-    border: 1px solid black;
-    height:0;
-    width:50px;
+    margin-top:15px;
+    margin: 15px;
+    
+    height: 1px;
+    width:180px;
+    background-color:  rgb(103, 95, 95);
 }
-.imgUpLoadContainer{}
+.imgUpLoadContainer{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 105px;
+}
+.mainPageUploadIcon:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+}
