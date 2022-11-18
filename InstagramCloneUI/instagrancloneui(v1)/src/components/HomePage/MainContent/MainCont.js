@@ -6,6 +6,7 @@ import StatusBar from './StatusBar/StatusBar';
 import PostPanel from './PostViews/PostPanel';
 import Suggestions from './Suggestion/Suggestion';
 import InfoSection from './InfoSection/InfoSection';
+import plusSign from '../../../images/plus.png'
 class MainCont extends Component {
     constructor(props) {
         super(props);
@@ -40,7 +41,7 @@ class MainCont extends Component {
                         <StatusBar ></StatusBar>
                         <div className="imgUpLoadContainer">
                         <div className="addLine"/>
-                        <div> <img className="mainPageUploadIcon"></img></div>
+                        <div> <img className="mainPageUploadIcon" src={plusSign} ></img></div>
                         <div className="addLine"/>
                         </div>    
                         
@@ -52,10 +53,13 @@ class MainCont extends Component {
                         
                     </div>
                 </Grid>
+                
                 <Grid item xs ={2}>
+                    
                     <InfoSection></InfoSection>
                     <Suggestions></Suggestions>
                     </Grid>
+                    
                 <Grid item xs ={2}></Grid>
             </Grid>
         </div> );

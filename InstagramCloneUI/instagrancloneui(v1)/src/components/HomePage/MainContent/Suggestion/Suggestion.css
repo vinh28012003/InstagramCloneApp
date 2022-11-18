@@ -34,3 +34,6 @@
     color:#889bf8;
     cursor: pointer;
 }
+.signOut:hover{
+    color: blue;
+}
