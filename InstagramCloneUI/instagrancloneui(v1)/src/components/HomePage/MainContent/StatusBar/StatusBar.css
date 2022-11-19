@@ -20,10 +20,20 @@
 
 .status {
     margin: 25px 15px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 .statusBarText {
     font-size: 12px;
     max-width: 60px;
     overflow-x:hidden;
+}
+.addStory{
+    height:55px;
+    width:55px;
+    margin: 20px;
+    margin-top: 26px;
+}
+.addStory:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
 }
