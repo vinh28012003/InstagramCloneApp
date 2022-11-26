@@ -1,3 +1,4 @@
+
 package com.vinhtran.instagramclone.Entity;
 
 import org.springframework.lang.NonNull;
@@ -73,3 +74,4 @@ public class Users {
         this.profileImage = profileImage;
     }
 }
+

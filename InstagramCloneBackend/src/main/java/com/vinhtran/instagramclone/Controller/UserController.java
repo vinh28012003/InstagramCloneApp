@@ -1,3 +1,4 @@
+
 package com.vinhtran.instagramclone.Controller;
 
 
@@ -26,3 +27,4 @@ public class UserController {
         return userServices.getUserData(userId);
     }
 }
+

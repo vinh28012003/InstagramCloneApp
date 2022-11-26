@@ -1,3 +1,4 @@
+
 package com.vinhtran.instagramclone.Repository;
 
 
@@ -12,3 +13,4 @@ public interface UsersRepo extends CrudRepository<Users, Integer> {
     Users findByUserId(String userId);
 
 }
+

@@ -1,3 +1,4 @@
+
 package com.vinhtran.instagramclone.Service;
 
 import com.vinhtran.instagramclone.Entity.Users;
@@ -20,3 +21,4 @@ public class UserServices {
         return userRepo.findByUserId(userId);
     }
 }
+
