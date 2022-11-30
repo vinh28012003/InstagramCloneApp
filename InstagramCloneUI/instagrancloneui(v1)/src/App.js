@@ -1,12 +1,13 @@
 import './App.css';
 import HomePage from './components/HomePage/HomePage.js'
-//import LoginP from'./components/LoginPage/LoginP';
+import LoginP from'./components/LoginPage/LoginP';
 
 function App() {
   return (
     <div className="App">
-      {/* <LoginP></LoginP> */}
-      <HomePage></HomePage>
+      (localStorage.getItem("users")==undifined || localStorage.getItem("users")==null)?
+      <LoginP></LoginP> : <HomePage></HomePage>
+      
     </div>
   );
 }
