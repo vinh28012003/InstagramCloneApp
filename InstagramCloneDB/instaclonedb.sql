@@ -1,2 +1,2 @@
 use instagramclonedb;
-select * from status;
+select * from user;

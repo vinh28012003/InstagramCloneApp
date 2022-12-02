@@ -5,9 +5,10 @@ import LoginP from'./components/LoginPage/LoginP';
 function App() {
   return (
     <div className="App">
-      (localStorage.getItem("users")==undifined || localStorage.getItem("users")==null)?
-      <LoginP></LoginP> : <HomePage></HomePage>
-      
+      {
+       (localStorage.getItem("users")==undefined || localStorage.getItem("users")==null) ?
+       <LoginP></LoginP> : <HomePage></HomePage>
+      }
     </div>
   );
 }

@@ -38,6 +38,7 @@ class SignUp extends Component {
             fetch("http://localhost:8080/users", requestOptions).then(response => response.json())
             .then(data =>{
                 localStorage.setItem("users", user);
+                localStorage.setItem("userID", user.uid);
                 window.location.reload();
             }).catch(error => {
 
@@ -58,7 +59,7 @@ class SignUp extends Component {
                 <input className="loginPageText" onChange={
                     (event) => {this.state.emailId=event.currentTarget.value;}} type="text" placeholder="Phone number or email"></input>
                 <input className="loginPageText" onChange={
-                    (event) => {this.state.className=event.currentTarget.value;}} type="text" placeholder="Fullname"></input>
+                    (event) => {this.state.name=event.currentTarget.value;}} type="text" placeholder="Fullname"></input>
                 <input className="loginPageText" onChange={
                     (event) => {this.state.userName=event.currentTarget.value;}} type="text" placeholder="Username"></input>
                 <input className="loginPageText" onChange={

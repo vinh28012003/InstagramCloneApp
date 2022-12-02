@@ -1,16 +1,22 @@
 import { Avatar } from '@mui/material';
 import React, {Component} from 'react';
 import "./Suggestion.css";
+import LoginP from "../../../LoginPage/LoginP.js"
 
 import imgSrc from "../../../../images/pp1.png";
+
 class Suggestions extends Component {
     constructor(props) {
         super(props);
     }
     state = {  }
     //code to log out user
+    logout = () => {
+        localStorage.removeItem('users');   
+        localStorage.removeItem('userID');
+        window.location.reload();
         
-
+    }    
     render() { 
         return ( 
         <div>
@@ -19,7 +25,7 @@ class Suggestions extends Component {
                     <div className = "sugTextLine">
                         Suggestions For You
                     </div>
-                    <div className = "signOut">Log out</div>
+                    <div className = "signOut" onClick={this.logout}>Log out</div>
                 </div>
                 <div>
                     <div className = "suggestions">
